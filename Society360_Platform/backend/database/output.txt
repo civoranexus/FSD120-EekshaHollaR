@@ -1,0 +1,114 @@
+[dotenv@17.2.3] injecting env (9) from ..\.env -- tip: ??????  specify custom .env file path with { path: '/custom/path/.env' }
+--- USERS ---
+[
+  {
+    "id": "d0702828-32e0-45a7-ad0a-eced9fb5d36e",
+    "email": "admin@society360.com",
+    "role": "admin"
+  },
+  {
+    "id": "170a30ac-fc01-451f-946b-e1c3fee8b749",
+    "email": "staff@society360.com",
+    "role": "staff"
+  },
+  {
+    "id": "37283e6a-d64e-4877-b8a3-ea1fe53b128a",
+    "email": "eekshar.22.beds@acharya.ac.in",
+    "role": "resident"
+  },
+  {
+    "id": "544604fb-7092-45ff-9701-dac361525142",
+    "email": "test-admin@society360.com",
+    "role": "resident"
+  },
+  {
+    "id": "aa17c2aa-ed0b-4a7b-96d5-ac472c641b4d",
+    "email": "eeksha5.rg@gmail.com",
+    "role": "resident"
+  },
+  {
+    "id": "0dad82a9-9e8e-4b30-a6b6-62d102d44b6f",
+    "email": "bob@gmail.com",
+    "role": "resident"
+  },
+  {
+    "id": "5bd3dde0-7877-4c73-bdf6-d3f86bd2a979",
+    "email": "alice@gmail.com",
+    "role": "resident"
+  },
+  {
+    "id": "e5393c32-1068-4053-b6c7-74d18144b556",
+    "email": "resident@society360.com",
+    "role": "resident"
+  }
+]
+--- ASSIGNMENTS ---
+[
+  {
+    "id": "f570a722-c7fb-4970-868c-35b1e110861a",
+    "user_id": "e5393c32-1068-4053-b6c7-74d18144b556",
+    "unit_id": "a727e792-878b-4055-ad3c-88d8a8c8f019",
+    "resident_type": "owner",
+    "is_primary_contact": true,
+    "move_in_date": null,
+    "move_out_date": null,
+    "status": "active",
+    "created_at": "2026-02-01T16:09:03.321Z"
+  },
+  {
+    "id": "377cfa64-fff0-4ab8-9012-1aef76bfd8e8",
+    "user_id": "5bd3dde0-7877-4c73-bdf6-d3f86bd2a979",
+    "unit_id": "6998fc95-95be-42ef-a50b-438e96272a90",
+    "resident_type": "owner",
+    "is_primary_contact": true,
+    "move_in_date": null,
+    "move_out_date": null,
+    "status": "active",
+    "created_at": "2026-02-01T16:09:03.321Z"
+  },
+  {
+    "id": "8332fc96-2eaf-4716-ac2f-935548e19cf7",
+    "user_id": "0dad82a9-9e8e-4b30-a6b6-62d102d44b6f",
+    "unit_id": "d91f9c44-4932-4d3a-beb2-bb035ab69ff4",
+    "resident_type": "tenant",
+    "is_primary_contact": true,
+    "move_in_date": null,
+    "move_out_date": null,
+    "status": "active",
+    "created_at": "2026-02-01T16:09:03.321Z"
+  },
+  {
+    "id": "4e52d932-e60a-4048-ba2c-e92021acd600",
+    "user_id": "aa17c2aa-ed0b-4a7b-96d5-ac472c641b4d",
+    "unit_id": "df4dcc11-e13d-4549-98f8-c283abf9c072",
+    "resident_type": "tenant",
+    "is_primary_contact": false,
+    "move_in_date": "2026-02-06T18:30:00.000Z",
+    "move_out_date": null,
+    "status": "active",
+    "created_at": "2026-02-07T12:17:00.423Z"
+  }
+]
+--- UNITS ---
+[
+  {
+    "id": "6998fc95-95be-42ef-a50b-438e96272a90",
+    "unit_number": "101"
+  },
+  {
+    "id": "a727e792-878b-4055-ad3c-88d8a8c8f019",
+    "unit_number": "102"
+  },
+  {
+    "id": "0a4d3469-1cf5-4a9b-8fa3-0d6b22576c49",
+    "unit_number": "201"
+  },
+  {
+    "id": "d91f9c44-4932-4d3a-beb2-bb035ab69ff4",
+    "unit_number": "B-101"
+  },
+  {
+    "id": "df4dcc11-e13d-4549-98f8-c283abf9c072",
+    "unit_number": "501"
+  }
+]

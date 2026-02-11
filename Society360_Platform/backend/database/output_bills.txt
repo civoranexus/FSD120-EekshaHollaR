@@ -1,0 +1,15 @@
+[dotenv@17.2.3] injecting env (9) from ..\.env -- tip: ???????  run anywhere with `dotenvx run -- yourcommand`
+--- BILLS ---
+[
+  {
+    "id": "0c3285fc-28a7-4cc1-a55a-8cf64a148719",
+    "unit_id": "6998fc95-95be-42ef-a50b-438e96272a90",
+    "bill_type": "Maintenance",
+    "amount": "2500.00",
+    "bill_date": "2026-01-31T18:30:00.000Z",
+    "due_date": "2026-02-15T18:30:00.000Z",
+    "status": "unpaid",
+    "description": null,
+    "created_at": "2026-02-01T16:09:03.321Z"
+  }
+]

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* =====================================================
+   DESIGN TOKENS
+===================================================== */
+@theme {
+    --color-primary: #3b82f6;
+    --color-primary-strong: #2563eb;
+    --color-background-navy: #020617;
+}
+
+:root {
+    --primary: #3b82f6;
+    --primary-strong: #2563eb;
+
+    --background: #020617;
+    --card-bg: rgba(15, 23, 42, 0.85);
+    --card-border: rgba(255, 255, 255, 0.12);
+
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+
+    /* Compact spacing (AUTH SAFE) */
+    --space-xs: 0.4rem;
+    --space-sm: 0.6rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+}
+
+/* =====================================================
+   BASE STYLES
+===================================================== */
+@layer base {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        background: radial-gradient(circle at top,
+                #020617 0%,
+                #020617 40%,
+                #000000 100%);
+        color: var(--text-main);
+        font-family: 'Inter', system-ui, sans-serif;
+        @apply antialiased;
+    }
+
+    /* Standardize base tags without breaking Tailwind overrides */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-bold text-white;
+    }
+
+    p {
+        @apply text-slate-400;
+    }
+
+    input {
+        @apply bg-[#0f172a] border border-white/10 text-white placeholder:text-slate-500;
+    }
+
+    button {
+        @apply cursor-pointer transition-all;
+    }
+}
+
+/* =====================================================
+   UTILITY CLASSES & COMPONENTS
+===================================================== */
+
+/* AUTH CARD (Used in Login/Register) */
+.auth-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 1.25rem;
+    padding: 1.75rem 1.75rem;
+    box-shadow: 0 20px 50px -30px rgba(0, 0, 0, 0.9);
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+/* =====================================================
+   SPECIFIC OVERRIDES
+===================================================== */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #0f172a inset;
+    -webkit-text-fill-color: #f8fafc;
+    transition: background-color 9999s ease-in-out 0s;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+}
